@@ -267,7 +267,7 @@ Through this project, the following skills were developed:
 
 ## 🚀 Deploy to Vercel
 
-This is a static HTML, CSS, and JavaScript project, so it does not need a build command or backend to deploy.
+This is a static HTML, CSS, and JavaScript project. The included `vercel.json` serves `index.html` at the site root; no build command or backend is needed.
 
 1. Push the project to a GitHub repository.
 2. Sign in to [Vercel](https://vercel.com/) and choose **Add New → Project**.
