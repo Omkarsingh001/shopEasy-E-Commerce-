@@ -265,6 +265,20 @@ Through this project, the following skills were developed:
 
 ---
 
+## 🚀 Deploy to Vercel
+
+This is a static HTML, CSS, and JavaScript project, so it does not need a build command or backend to deploy.
+
+1. Push the project to a GitHub repository.
+2. Sign in to [Vercel](https://vercel.com/) and choose **Add New → Project**.
+3. Import the `shopEasy-E-Commerce-` GitHub repository and authorize Vercel if prompted.
+4. Keep the framework preset as **Other**. Leave the root directory as `./` and leave the build command and output directory blank.
+5. Select **Deploy**. Vercel will serve `index.html` and the other project files.
+
+After deployment, each push to the connected GitHub branch will trigger a new deployment. Shopping cart, wishlist, and account data are stored in the visitor's browser using Local Storage; this project does not include a backend.
+
+---
+
 ## 👨‍💻 Developer
 
 **Project Name:** ShopEase – Modern E-Commerce Website
