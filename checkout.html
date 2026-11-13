@@ -1,0 +1,128 @@
+<!doctype html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Checkout | ShopEase</title>
+
+    <link rel="stylesheet" href="css/style.css" />
+  </head>
+  <body>
+    <header class="checkout-header">
+      <h2>ShopEase Checkout</h2>
+    </header>
+
+    <section class="checkout-container">
+      <!-- Left Side -->
+      <div class="checkout-form">
+        <h2>Shipping Address</h2>
+
+        <form id="checkoutForm">
+          <div class="input-group">
+            <label>Full Name</label>
+            <input type="text" required />
+          </div>
+
+          <div class="input-group">
+            <label>Email</label>
+            <input type="email" required />
+          </div>
+
+          <div class="input-group">
+            <label>Phone</label>
+            <input type="text" required />
+          </div>
+
+          <div class="input-group">
+            <label>Address</label>
+            <textarea rows="4" required></textarea>
+          </div>
+
+          <div class="row">
+            <div class="input-group">
+              <label>City</label>
+              <input type="text" />
+            </div>
+
+            <div class="input-group">
+              <label>State</label>
+              <input type="text" />
+            </div>
+          </div>
+
+          <div class="row">
+            <div class="input-group">
+              <label>ZIP Code</label>
+              <input type="text" />
+            </div>
+
+            <div class="input-group">
+              <label>Country</label>
+              <input type="text" value="India" />
+            </div>
+          </div>
+          <h2>Payment Method</h2>
+
+          <div class="payment-option">
+            <input
+              type="radio"
+              id="cod"
+              name="payment"
+              value="cash_on_delivery"
+              checked
+            />
+            <label for="cod">Cash on Delivery</label>
+          </div>
+
+          <div class="payment-option">
+            <input type="radio" id="card" name="payment" value="card" />
+            <label for="card">Credit / Debit Card</label>
+          </div>
+
+          <div class="payment-option">
+            <input type="radio" id="upi" name="payment" value="upi" />
+            <label for="upi">UPI Payment</label>
+          </div>
+      </div>
+
+      <!-- Right Side -->
+
+      <div class="order-summary">
+        <h2>Order Summary</h2>
+
+        <div id="summaryItems"></div>
+
+        <hr />
+
+        <div class="summary-row">
+          <span>Subtotal</span>
+          <span id="subtotal">$0</span>
+        </div>
+
+        <div class="summary-row">
+          <span>Shipping</span>
+          <span>$10</span>
+        </div>
+
+        <div class="summary-row">
+          <span>Tax</span>
+          <span>$5</span>
+        </div>
+
+        <hr />
+
+        <div class="summary-total">
+          <span>Total</span>
+          <span id="grandTotal">$0</span>
+        </div>
+
+        <button id="placeOrder">Place Order</button>
+      </div>
+    </section>
+
+    <div id="toast"></div>
+
+    <script src="js/utils.js"></script>
+    <script src="js/checkout.js"></script>
+  </body>
+</html>

@@ -1,0 +1,141 @@
+<!doctype html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+
+    <title>Contact | ShopEase</title>
+
+    <link rel="stylesheet" href="css/style.css" />
+
+    <link rel="preconnect" href="https://fonts.googleapis.com" />
+    <link
+      href="https://fonts.googleapis.com/css2?family=Poppins:wght@300;400;500;600;700&display=swap"
+      rel="stylesheet"
+    />
+
+    <link
+      rel="stylesheet"
+      href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.6.0/css/all.min.css"
+    />
+  </head>
+
+  <body>
+    <header>
+      <nav class="navbar">
+        <div class="logo">ShopEase</div>
+
+        <ul class="nav-links">
+          <li><a href="index.html">Home</a></li>
+
+          <li><a href="products.html">Products</a></li>
+
+          <li><a href="about.html">About</a></li>
+
+          <li><a href="contact.html">Contact</a></li>
+        </ul>
+
+        <div class="nav-icons">
+          <!-- <i class="fa-solid fa-magnifying-glass"></i> -->
+
+          <!-- <i class="fa-solid fa-heart"></i> -->
+          <a href="wishlist.html">
+            <i class="fa-solid fa-heart"></i>
+          </a>
+
+
+          <!-- <i class="fa-solid fa-cart-shopping"></i> -->
+          <a href="cart.html">
+            <i class="fa-solid fa-cart-shopping"></i>
+          </a>
+
+          <!-- <button>Login</button> -->
+        </div>
+      </nav>
+    </header>
+    <section class="contact-hero">
+      <h1>Contact Us</h1>
+
+      <p>We'd love to hear from you.</p>
+    </section>
+
+    <section class="contact-container">
+      <div class="contact-info">
+        <h2>Get In Touch</h2>
+
+        <div class="info">
+          <i class="fa-solid fa-location-dot"></i>
+
+          <div>
+            <h4>Address</h4>
+
+            <p>Patiala, Punjab, India</p>
+          </div>
+        </div>
+
+        <div class="info">
+          <i class="fa-solid fa-phone"></i>
+
+          <div>
+            <h4>Phone</h4>
+
+            <p>+91 98765 43210</p>
+          </div>
+        </div>
+
+        <div class="info">
+          <i class="fa-solid fa-envelope"></i>
+
+          <div>
+            <h4>Email</h4>
+
+            <p>support@shopease.com</p>
+          </div>
+        </div>
+
+        <div class="social">
+          <i class="fab fa-facebook-f"></i>
+
+          <i class="fab fa-instagram"></i>
+
+          <i class="fab fa-twitter"></i>
+
+          <i class="fab fa-linkedin-in"></i>
+        </div>
+      </div>
+
+      <div class="contact-form">
+        <h2>Send Message</h2>
+
+        <form id="contactForm">
+          <input type="text" placeholder="Your Name" required />
+
+          <input type="email" placeholder="Your Email" required />
+
+          <input type="text" placeholder="Subject" required />
+
+          <textarea
+            rows="6"
+            placeholder="Write your message..."
+            required
+          ></textarea>
+
+          <button>Send Message</button>
+        </form>
+      </div>
+    </section>
+
+    <section class="map">
+      <iframe
+        src="https://www.google.com/maps?q=Patiala&output=embed"
+        loading="lazy"
+      >
+      </iframe>
+    </section>
+
+    <div id="toast"></div>
+
+    <script src="js/utils.js"></script>
+    <script src="js/contact.js"></script>
+  </body>
+</html>

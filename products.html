@@ -1,0 +1,96 @@
+<!doctype html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+
+    <title>ShopEase | Modern E-Commerce</title>
+
+    <!-- Google Font -->
+    <link rel="preconnect" href="https://fonts.googleapis.com" />
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
+    <link
+      href="https://fonts.googleapis.com/css2?family=Poppins:wght@300;400;500;600;700&display=swap"
+      rel="stylesheet"
+    />
+
+    <!-- Font Awesome -->
+    <link
+      rel="stylesheet"
+      href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.6.0/css/all.min.css"
+    />
+
+    <!-- CSS -->
+    <link rel="stylesheet" href="css/style.css" />
+  </head>
+  <body>
+    <!-- ================= NAVBAR ================= -->
+
+    <header>
+      <nav class="navbar">
+        <div class="logo">ShopEase</div>
+
+        <ul class="nav-links">
+          <li><a href="index.html">Home</a></li>
+
+          <li><a href="products.html">Products</a></li>
+
+          <li><a href="about.html">About</a></li>
+
+          <li><a href="contact.html">Contact</a></li>
+        </ul>
+
+        <div class="nav-icons">
+       <a href="wishlist.html">
+            <i class="fa-solid fa-heart"></i>
+          </a>
+
+          <!-- <i class="fa-solid fa-cart-shopping"></i> -->
+          <a href="cart.html">
+            <i class="fa-solid fa-cart-shopping"></i>
+          </a>
+
+         <button><a href="login.html">Login</a></button>
+        </div>
+      </nav>
+    </header>
+
+    <main class="products-page">
+      <h1 class="page-title">Our Products</h1>
+
+      <div class="top-bar">
+        <input type="text" id="searchInput" placeholder="Search products..." />
+
+        <select id="categoryFilter">
+          <option value="all">All Categories</option>
+
+          <option value="Fashion">Fashion</option>
+
+          <option value="Electronics">Electronics</option>
+
+          <option value="Accessories">Accessories</option>
+        </select>
+
+        <select id="sortPrice">
+          <option value="default">Sort Price</option>
+
+          <option value="low">Low to High</option>
+
+          <option value="high">High to Low</option>
+        </select>
+      </div>
+
+      <div id="productGrid" class="product-grid"></div>
+    </main>
+
+    <script src="js/data.js"></script>
+    <script src="js/products.js"></script>
+    <script src="js/utils.js"></script>
+    <footer>
+      <h2>ShopEase</h2>
+
+      <p>© 2026 ShopEase. All Rights Reserved.</p>
+    </footer>
+    <div id="toast"></div>
+  </body>
+</html>

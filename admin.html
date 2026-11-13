@@ -1,0 +1,79 @@
+<!doctype html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+
+    <title>Admin Dashboard</title>
+
+    <link rel="stylesheet" href="css/style.css" />
+  </head>
+
+  <body>
+    <header class="admin-header">
+      <h1>ShopEase Admin Dashboard</h1>
+    </header>
+
+    <div class="dashboard">
+      <div class="stats">
+        <div class="card">
+          <h2 id="totalProducts">0</h2>
+
+          <p>Total Products</p>
+        </div>
+
+        <div class="card">
+          <h2 id="cartItems">0</h2>
+
+          <p>Cart Items</p>
+        </div>
+
+        <div class="card">
+          <h2 id="wishlistItems">0</h2>
+
+          <p>Wishlist Items</p>
+        </div>
+      </div>
+
+      <section class="add-product">
+        <h2>Add Product</h2>
+
+        <form id="productForm">
+          <input
+            type="text"
+            id="productName"
+            placeholder="Product Name"
+            required
+          />
+
+          <input type="number" id="productPrice" placeholder="Price" required />
+
+          <input
+            type="text"
+            id="productCategory"
+            placeholder="Category"
+            required
+          />
+
+          <input
+            type="text"
+            id="productImage"
+            placeholder="Image URL"
+            required
+          />
+
+          <button>Add Product</button>
+        </form>
+      </section>
+
+      <section>
+        <h2>All Products</h2>
+
+        <div id="adminProducts"></div>
+      </section>
+    </div>
+
+    <script src="js/data.js"></script>
+    <script src="js/admin.js"></script>
+  </body>
+</html>

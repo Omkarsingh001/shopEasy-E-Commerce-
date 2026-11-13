@@ -1,0 +1,254 @@
+<!doctype html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>ShopEase | Modern E-Commerce</title>
+
+    <!-- Google Font -->
+    <link rel="preconnect" href="https://fonts.googleapis.com" />
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
+    <link
+      href="https://fonts.googleapis.com/css2?family=Poppins:wght@300;400;500;600;700&display=swap"
+      rel="stylesheet"
+    />
+
+    <!-- Font Awesome -->
+    <link
+      rel="stylesheet"
+      href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.6.0/css/all.min.css"
+    />
+
+    <!-- CSS -->
+    <link rel="stylesheet" href="css/style.css" />
+    <link rel="stylesheet" href="css/responsive.css" />
+  </head>
+  <body>
+    <div id="loader">
+      <div class="spinner"></div>
+    </div>
+    <!-- ================= NAVBAR ================= -->
+
+    <header>
+      <nav class="navbar">
+        <div class="logo">ShopEase</div>
+        <div class="menu-toggle">
+          <i class="fa-solid fa-bars"></i>
+        </div>
+
+        <ul class="nav-links">
+          <li><a href="index.html">Home</a></li>
+
+          <li><a href="products.html">Products</a></li>
+
+          <li><a href="about.html">About</a></li>
+
+          <li><a href="contact.html">Contact</a></li>
+        </ul>
+
+        <div class="nav-icons">
+          <!-- <i class="fa-solid fa-magnifying-glass"></i> -->
+          <div class="search-box">
+            <input
+              type="text"
+              id="navbarSearch"
+              placeholder="Search products..."
+            />
+
+            <button id="searchBtn">
+              <i class="fa-solid fa-magnifying-glass"></i>
+            </button>
+          </div>
+          <!-- 
+          <i class="fa-solid fa-heart"></i> -->
+
+          <a href="wishlist.html">
+            <i class="fa-solid fa-heart"></i>
+          </a>
+
+          <!-- <i class="fa-solid fa-cart-shopping"></i> -->
+          <a href="cart.html">
+            <i class="fa-solid fa-cart-shopping"></i>
+          </a>
+
+          <button><a href="login.html">Login</a></button>
+        </div>
+      </nav>
+    </header>
+
+    <!-- ================= HERO ================= -->
+
+    <section class="hero">
+      <div class="hero-left">
+        <h1>Discover Amazing Products</h1>
+
+        <p>
+          Shop the newest collection with exciting offers, premium quality and
+          fast delivery.
+        </p>
+
+        <button>Shop Now</button>
+      </div>
+
+      <div class="hero-right">
+        <img src="images/hero.jpeg" alt="Shopping" />
+      </div>
+    </section>
+
+    <!-- ================= CATEGORIES ================= -->
+
+    <section class="categories">
+      <h2 class="section-title">Shop by Category</h2>
+
+      <div class="category-container">
+        <div class="category-card">
+          <i class="fa-solid fa-shirt"></i>
+          <h3>Fashion</h3>
+        </div>
+
+        <div class="category-card">
+          <i class="fa-solid fa-mobile-screen-button"></i>
+          <h3>Electronics</h3>
+        </div>
+
+        <div class="category-card">
+          <i class="fa-solid fa-couch"></i>
+          <h3>Furniture</h3>
+        </div>
+
+        <div class="category-card">
+          <i class="fa-solid fa-shoe-prints"></i>
+          <h3>Shoes</h3>
+        </div>
+      </div>
+    </section>
+    <!-- ================= PRODUCTS ================= -->
+
+    <section class="products">
+      <h2 class="section-title">Featured Products</h2>
+
+      <div class="product-container">
+        <div class="product-card">
+          <img src="images/premium_shoes.png" />
+
+          <h3>Premium Shoes</h3>
+
+          <p>$79</p>
+
+          <button>Add to Cart</button>
+        </div>
+
+        <div class="product-card">
+          <img src="images/headphones.webp" />
+
+          <h3>Wireless Headphones</h3>
+
+          <p>$129</p>
+
+          <button>Add to Cart</button>
+        </div>
+
+        <div class="product-card">
+          <img src="images/smart_watch.webp" />
+
+          <h3>Smart Watch</h3>
+
+          <p>$149</p>
+
+          <button>Add to Cart</button>
+        </div>
+
+        <div class="product-card">
+          <img src="images/backpack.jpeg" />
+
+          <h3>Backpack</h3>
+
+          <p>$59</p>
+
+          <button>Add to Cart</button>
+        </div>
+      </div>
+    </section>
+
+    <section class="features">
+      <h2 class="section-title">Why Choose ShopEase</h2>
+
+      <div class="feature-container">
+        <div class="feature-card">
+          <i class="fa-solid fa-truck-fast"></i>
+
+          <h3>Free Shipping</h3>
+
+          <p>Fast delivery across the country.</p>
+        </div>
+
+        <div class="feature-card">
+          <i class="fa-solid fa-credit-card"></i>
+
+          <h3>Secure Payment</h3>
+
+          <p>100% safe and secure payment gateway.</p>
+        </div>
+
+        <div class="feature-card">
+          <i class="fa-solid fa-headset"></i>
+
+          <h3>24/7 Support</h3>
+
+          <p>Friendly customer support anytime.</p>
+        </div>
+      </div>
+    </section>
+    <section class="reviews">
+      <h2 class="section-title">What Our Customers Say</h2>
+
+      <div class="review-slider">
+        <button id="prevReview" class="slider-btn">❮</button>
+
+        <div class="review-card">
+          <img
+            id="reviewImage"
+            src="https://randomuser.me/api/portraits/women/32.jpg"
+            alt="Customer"
+          />
+
+          <h3 id="reviewName">Sarah Johnson</h3>
+
+          <div id="reviewStars" class="stars">⭐⭐⭐⭐⭐</div>
+
+          <p id="reviewText">
+            Amazing shopping experience! The products are excellent and delivery
+            was very fast.
+          </p>
+        </div>
+
+        <button id="nextReview" class="slider-btn">❯</button>
+      </div>
+    </section>
+
+    <section class="newsletter">
+      <h2>Subscribe to our Newsletter</h2>
+
+      <p>Get the latest updates and offers.</p>
+
+      <form>
+        <input type="email" placeholder="Enter your email" />
+
+        <button>Subscribe</button>
+      </form>
+    </section>
+
+    <button id="backToTop" title="Go to top">↑</button>
+
+    <footer>
+      <h2>ShopEase</h2>
+
+      <p>© 2026 ShopEase. All Rights Reserved.</p>
+    </footer>
+    <script src="js/navbar.js"></script>
+    <script src="js/loader.js"></script>
+    <script src="js/reviews.js"></script>
+    <script src="js/backtotop.js"></script>
+    <script src="js/counter.js"></script>
+  </body>
+</html>
